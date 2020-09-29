@@ -1,12 +1,19 @@
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
-etage = gets.chomp.to_i
-n = etage +1
+print ">"
 
-if etage <= 25
-    
-    n.times do|i| puts "" 
-    i.times do print '#' 
+number = gets.chomp.to_i
+step = 0
+a = "#"
+b = "#"
 
-    end
-end
+puts "Voici la pyramide :"
+
+while (step < number)
+  if step == 0
+  puts a
+  step += 1
+  else
+  puts a += b
+  step += 1
+  end
 end
